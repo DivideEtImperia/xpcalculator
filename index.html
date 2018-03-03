@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Experience Points Calculator</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Calculate XP required to level up to a certain level, or vice versa, in Bastion.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Experience Points Calculator">
+    <meta property="og:description" content="Calculate XP required to level up to a certain level, or vice versa, in Bastion.">
+    <meta property="og:url" content="https://bastionbot.org/levelcalculator">
+    <meta property="og:image" content="https://bastionbot.org/assets/image/BastionText3.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bastion">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://bastionbot.org/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div id="back-to-home">
+        <a href="https://bastionbot.org"><img src="https://bastionbot.org/assets/image/arrow_left.png" /></a>
+      </div>
+      <div title="Calculate XP required to level up to a certain level, or vice versa, in Bastion.">Experience Points Calculator</div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form>
+          <div class="input-group">
+            <input type="text" name="level" pattern="[0-9]*" placeholder="Level" />
+          </div>
+          <div class="input-group">
+            <input type="text" name="xp" pattern="[0-9]*" placeholder="Required XP" disabled />
+          </div>
+          <button type="button" onClick="return calculateXP(this)">Calculate</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">Copyright &copy; 2018 - The Bastion Bot Project</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
